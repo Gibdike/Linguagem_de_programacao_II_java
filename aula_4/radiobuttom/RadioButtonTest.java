@@ -1,4 +1,4 @@
-package aula_4;
+package aula_4.radiobuttom;
 import javax.swing.JFrame;
 
 public class RadioButtonTest{

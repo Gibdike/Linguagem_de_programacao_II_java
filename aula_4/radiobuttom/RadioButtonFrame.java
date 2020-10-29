@@ -1,4 +1,4 @@
-package aula_4;
+package aula_4.radiobuttom;
 
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -20,6 +20,7 @@ public class RadioButtonFrame extends JFrame{
     private JRadioButton italicJRadioButton;
     private JRadioButton boldItalicJRadioButton;
     private ButtonGroup radioGroup;
+    private static final long serialVersionUID = 1L;
 
     public RadioButtonFrame(){
         super("RadioButton Test");
