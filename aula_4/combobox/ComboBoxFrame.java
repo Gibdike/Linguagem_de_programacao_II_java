@@ -1,7 +1,4 @@
-package aula_4.combobox;
-
 import java.awt.FlowLayout;
-import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -12,7 +9,6 @@ import javax.swing.ImageIcon;
 public class ComboBoxFrame extends JFrame {
 
     private JComboBox imagesJComboBox;
-    
     private JLabel label;
     private static final long serialVersionUID = 1L;
 
@@ -31,18 +27,14 @@ public class ComboBoxFrame extends JFrame {
         imagesJComboBox = new JComboBox(names);
         imagesJComboBox.setMaximumRowCount(3);
 
-        imagesJComboBox.addItemListener(
-            new ItemListener(){
-                public void itemStateChanged(ItemEvent event){
-                    if(event.getStateChange() == ItemEvent.SELECTED )
-                        label.setIcon(icons[
-                            imagesJComboBox.getSelectedIndex()
+        imagesJComboBox.addItemListener((ItemEvent event) -> {
+            if(event.getStateChange() == ItemEvent.SELECTED )
+                label.setIcon(icons[
+                        imagesJComboBox.getSelectedIndex()
                         ]);
-                }
-            }
-        );
+        });
         add(imagesJComboBox);
         label = new JLabel(icons[0]);
         add(label);
-    }
+    };
 }

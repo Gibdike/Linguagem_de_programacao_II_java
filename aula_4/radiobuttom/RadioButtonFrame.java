@@ -62,7 +62,7 @@ public class RadioButtonFrame extends JFrame{
 
     private class RadioButtonHandler implements ItemListener{
         private Font font;
-
+        private JTextField textField;
         public RadioButtonHandler(Font f){
             font = f;
         }
